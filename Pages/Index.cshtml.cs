@@ -36,7 +36,7 @@ namespace survey.Pages
             //Serializo el objeto
             string objeto = JsonConvert.SerializeObject(sr);
             //Escribo en disco
-            System.IO.File.WriteAllText(Path.Combine(Directory.GetCurrentDirectory(), @"json/person_" + dni + ".json"), objeto);
+            System.IO.File.WriteAllText("/json/person_" + dni + ".json", objeto);
             
             //Genero el QR
             QRCodeGenerator qrGenerator = new QRCodeGenerator();
