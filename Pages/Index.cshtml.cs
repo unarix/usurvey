@@ -36,7 +36,7 @@ namespace survey.Pages
             //Serializo el objeto
             string objeto = JsonConvert.SerializeObject(sr);
             //Escribo en disco
-            System.IO.File.WriteAllText(Path.Combine(Directory.GetCurrentDirectory(), @"/json/person_" + dni + ".json"), objeto);
+            System.IO.File.WriteAllText(Path.Combine(Directory.GetCurrentDirectory(), @"json/person_" + dni + ".json"), objeto);
             
             //Genero el QR
             QRCodeGenerator qrGenerator = new QRCodeGenerator();
@@ -44,13 +44,15 @@ namespace survey.Pages
             QRCode qrCode = new QRCode(qrCodeData);
             Bitmap qrCodeImage = qrCode.GetGraphic(20);
 
+            string test = "xxx";
+
             using(var image = qrCodeImage)
             {
                 var resized = new Bitmap(200, 200);
                 using (var graphics = Graphics.FromImage(resized))
                 {
                     graphics.DrawImage(image, 0, 0, 200, 200);
-                    string filename = Path.Combine(Directory.GetCurrentDirectory(), @"/images/person_" + dni + ".png");
+                    string filename = Path.Combine(Directory.GetCurrentDirectory(), @"images/person_" + dni + ".png");
                     resized.Save(filename, ImageFormat.Png);
                 }       
             } 
