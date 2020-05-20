@@ -1,0 +1,42 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Declaracion Jurada";
+}
+
+@if (!@Model.qrsourcefile.Equals(""))
+{
+    <h2>Declaracion jurada A2K</h2>
+    <h3>Guarde este codigo QR</h3>
+    <p>El siguiente codigo QR se le solicitara al momento del embarque, se comprobara su veracidad y se le realizara un testeo de temperatura.</p>
+    
+    <img src="@Model.qrsourcefile" />
+    <br>@Model.nombre
+    <br>@Model.dni
+    
+}
+
+@if (@Model.qrsourcefile.Equals(""))
+{
+    <h2>Declaracion jurada A2K</h2>
+    <h4>Complete el siguiente formulario</h4>
+    
+    <form method="post">
+        <p>Ingrese su nombre </p>
+        <input asp-for="nombre" />
+        
+        <p>Ingrese su DNI </p>
+        <input asp-for="dni" />
+        
+        <p>Tiene fiebre? </p>
+        <input asp-for="fiebre" />
+        
+        <p>Tiene tos? </p>
+        <input asp-for="tos" />
+        
+        <br>
+
+        <input type="submit" />
+    </form>
+}
+
