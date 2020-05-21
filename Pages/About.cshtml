@@ -3,13 +3,71 @@
 @{
     ViewData["Title"] = "Comprobar";
 }
-<h2>@ViewData["Title"]</h2>
-<h3>@Model.Message</h3>
 
-<p>Use this area to provide additional information.</p>
 
-<h2 style="color: azure">Este es un titulo de ejemplo</h2>
+<div class="py-5 text-center">
+    <img class="d-block mx-auto mb-4" src="https://upload.wikimedia.org/wikipedia/commons/7/7e/Argentina_Logo.png" alt="" width="100">
+    <h2>Comprobar DDJJ</h2>
+</div>
 
-<p>The time is @DateTime.Now.ToString()</p>
+@if (!@Model.dni.Equals(""))
+{
+
+    <h4>Datos del empleado</h4>
+    <br>
+    <p><b>Nombre:</b> @Model.nombre</p>
+    <P><b>DNI</b> @Model.dni</p>
+    
+    <hr class="mb-4">  
+    <h4>Sintomas</h4>
+    <br>
+    <p><b>Fiebre:</b> @Model.fiebre</p>
+    <p><b>Tos:</b> @Model.tos</p>
+    <p><b>Dolor Garganta:</b> @Model.garganta</p>
+    <p><b>Perdida de olfato y Gusto:</b> @Model.olfato</p>
+    <p><b>Dificultar al resrar:</b> @Model.respirar</p>
+    <p><b>Diarrea:</b> @Model.diarrea</p>
+    <p><b>Vómito:</b> @Model.vomito</p>
+    <p><b>Erupciones de piel:</b> @Model.erupciones</p>
+    <p><b>Dolor de cabeza:</b> @Model.cabeza</p>
+    <p><b>Dolor muscula:</b> @Model.muscular</p>
+    <p><b>Sangrado anormal:</b> @Model.sangrado</p>
+    <p><b>Piel u ojos amarillos:</b> @Model.piel</p>
+    
+    <hr class="mb-4">  
+
+    <h4><b>Estuve en contacto cercano con personas que hayan manifestado los síntomas del COVID-19:</b> @Model.contacto</h4>
+    <p><b>Descripcion del contacto:</b> @Model.contacto_desc</p>
+    
+    <hr class="mb-4">  
+    <h4><b>Me he realizo un test de COVID-19:</b> @Model.test</h4>
+    <p><b>Fecha del test:</b> @Model.fecha_test</p>
+    <p><b>Resultado:</b> @Model.test_desc</p>
+    <hr class="mb-4">  
+    <br>
+    <form method="post">
+        <h4>Ingrese temperatura </h4>
+        <br>
+        <div class="input-group mb-3">
+        <div class="input-group-prepend">
+            <span class="input-group-text" id="basic-addon1">Cº</span>
+        </div>
+        <input type="text" asp-for="temperatura" class="form-control" placeholder="En grados celsius" aria-label="temperatura" aria-describedby="basic-addon1">
+        </div>
+
+        
+        <button class="btn btn-danger btn-primary btn-lg btn-block" type="submit">Finalizar DDJJ</button>
+    </form>
+}
+else
+{
+    <h4>@Model.Message</h4>
+    <br>
+}
+
+@if (@Model.dni == null)
+{
+    <h3>Formulario guardado correctamente</h3>
+}
 
 
