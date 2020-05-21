@@ -33,7 +33,7 @@ namespace survey.Pages
             //Serializo el objeto
             string objeto = JsonConvert.SerializeObject(sr);
             //Escribo en disco
-            System.IO.File.WriteAllText(Path.Combine(Directory.GetCurrentDirectory(), @"json/person_" + dni + ".json"), objeto);
+            System.IO.File.WriteAllText(@"/json/person_" + dni + ".json", objeto);
 
             // Guardo la imagen
             qrsourcefile = "https://api.qrserver.com/v1/create-qr-code/?data=https://usurvey.azurewebsites.net/About?id="+ dni +"&amp;size=100x100" ;
