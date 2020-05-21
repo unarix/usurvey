@@ -12,6 +12,7 @@ namespace survey.Pages
 {
     public class IndexModel : PageModel
     {
+
         public void OnGet()
         {
             qrsourcefile = "";
@@ -19,6 +20,8 @@ namespace survey.Pages
 
         public void OnPost()
         {
+            var service = HttpContext.RequestServices.GetService(typeof(Microsoft.AspNetCore.Hosting.IHostingEnvironment)) as Microsoft.AspNetCore.Hosting.IHostingEnvironment;
+
             nombre = Request.Form[nameof(nombre)];
             dni = Request.Form[nameof(dni)];
             fiebre = Request.Form[nameof(fiebre)];
@@ -32,8 +35,13 @@ namespace survey.Pages
 
             //Serializo el objeto
             string objeto = JsonConvert.SerializeObject(sr);
+            //Obtengo el directorio
+            string folderName = "json/";
+            string webRootPath = service.WebRootPath;
+            string newPath = Path.Combine(webRootPath, folderName);
+            
             //Escribo en disco
-            System.IO.File.WriteAllText(@"/json/person_" + dni + ".json", objeto);
+            System.IO.File.WriteAllText(newPath + @"/person_" + dni + ".json", objeto);
 
             // Guardo la imagen
             qrsourcefile = "https://api.qrserver.com/v1/create-qr-code/?data=https://usurvey.azurewebsites.net/About?id="+ dni +"&amp;size=100x100" ;
