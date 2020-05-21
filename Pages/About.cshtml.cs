@@ -7,9 +7,6 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 using survey.Models;
 using Newtonsoft.Json;
 using System.IO;
-using QRCoder;
-using System.Drawing;
-using System.Drawing.Imaging;
 
 namespace survey.Pages
 {

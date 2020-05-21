@@ -6,9 +6,6 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using survey.Models;
 using Newtonsoft.Json;
-using System.IO;
-using QRCoder;
-using System.Drawing;
 
 namespace survey.Pages
 {
@@ -36,15 +33,9 @@ namespace survey.Pages
             string objeto = JsonConvert.SerializeObject(sr);
             //Escribo en disco
             //System.IO.File.WriteAllText("/json/person_" + dni + ".json", objeto);
-            
-            //Genero el QR
-            QRCodeGenerator qrGenerator = new QRCodeGenerator();
-            QRCodeData qrCodeData = qrGenerator.CreateQrCode("The text which should be encoded.", QRCodeGenerator.ECCLevel.Q);
-            QRCode qrCode = new QRCode(qrCodeData);
-            Bitmap qrCodeImage = qrCode.GetGraphic(20);
 
             // Guardo la imagen
-            qrsourcefile = "/images/person_" + dni + ".png";
+            qrsourcefile = "https://api.qrserver.com/v1/create-qr-code/?data=https://usurvey.azurewebsites.net/About?id="+ dni +"&amp;size=100x100" ;
         }
 
         public string nombre
