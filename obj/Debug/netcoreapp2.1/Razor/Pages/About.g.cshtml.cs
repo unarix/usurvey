@@ -274,12 +274,12 @@ using survey;
             WriteLiteral("</p>\r\n    <hr class=\"mb-4\">  \r\n    <br>\r\n    ");
             EndContext();
             BeginContext(1558, 553, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "4bcb83b03fa0472f8ee412327e14291f", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "3a86c8679d1b4b8294c8db5b87b62c1e", async() => {
                 BeginContext(1578, 234, true);
                 WriteLiteral("\r\n        <h4>Ingrese temperatura </h4>\r\n        <br>\r\n        <div class=\"input-group mb-3\">\r\n        <div class=\"input-group-prepend\">\r\n            <span class=\"input-group-text\" id=\"basic-addon1\">Cº</span>\r\n        </div>\r\n        ");
                 EndContext();
                 BeginContext(1812, 151, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("input", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "8e6593057a644275b0c3b9eb4a19368b", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("input", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "52865fcc43e149e08b70353f6e0b113e", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.InputTagHelper>();

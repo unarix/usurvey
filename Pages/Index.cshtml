@@ -7,7 +7,7 @@
     @if (!@Model.qrsourcefile.Equals(""))
     {
         <div class="py-5 text-center">
-            <img class="d-block mx-auto mb-4" src="https://upload.wikimedia.org/wikipedia/commons/7/7e/Argentina_Logo.png" alt="" width="100">
+            <img class="d-block mx-auto mb-4" src="images/covid.png" alt="" width="100">
             <h2>Declaracion jurada</h2>
         </div>
         <p>Guarde el siguiente código QR; puede descargarlo o tomar una captura de pantalla. Deberá ser presentado en el departamento medico al momento de su revisión.</p>
@@ -23,9 +23,12 @@
     @if (@Model.qrsourcefile.Equals(""))
     {
         <div class="py-5 text-center">
-            <img class="d-block mx-auto mb-4" src="https://upload.wikimedia.org/wikipedia/commons/7/7e/Argentina_Logo.png" alt="" width="100">
+            <img class="d-block mx-auto mb-4" src="images/covid.png" alt="" width="100">
             <h2>Declaracion jurada</h2>
-            <p class="lead">Complete el siguiente formulario</p>
+            <p class="lead">
+                Complete el siguiente formulario
+                <button type="button" onclick="window.location='https://ezelab.azurewebsites.net/templates/default/?id=covid';" class="btn btn-danger">+Info</button>
+            </p>
         </div>
 
         <form method="post" id="myForm" class="needs-validation" novalidate>
