@@ -9,7 +9,6 @@ using Newtonsoft.Json;
 using System.IO;
 using QRCoder;
 using System.Drawing;
-using System.Drawing.Imaging;
 
 namespace survey.Pages
 {
@@ -40,36 +39,13 @@ namespace survey.Pages
             
             //Genero el QR
             QRCodeGenerator qrGenerator = new QRCodeGenerator();
-            QRCodeData qrCodeData = qrGenerator.CreateQrCode("este es un texto de ejemplo", QRCodeGenerator.ECCLevel.Q);
+            QRCodeData qrCodeData = qrGenerator.CreateQrCode("The text which should be encoded.", QRCodeGenerator.ECCLevel.Q);
             QRCode qrCode = new QRCode(qrCodeData);
             Bitmap qrCodeImage = qrCode.GetGraphic(20);
-
-            string test = "xxx";
-
-            using(var image = qrCodeImage)
-            {
-                var resized = new Bitmap(200, 200);
-                using (var graphics = Graphics.FromImage(resized))
-                {
-                    graphics.DrawImage(image, 0, 0, 200, 200);
-                    //string filename = Path.Combine(Directory.GetCurrentDirectory(), @"images/person_" + dni + ".png");
-                    //resized.Save(filename, ImageFormat.Png);
-                }       
-            } 
 
             // Guardo la imagen
             qrsourcefile = "/images/person_" + dni + ".png";
         }
-
-        private static Byte[] BitmapToBytes(Bitmap img)
-        {
-            using (MemoryStream stream = new MemoryStream())
-            {
-                img.Save(stream, System.Drawing.Imaging.ImageFormat.Png);
-                return stream.ToArray();
-            }
-        }
-
 
         public string nombre
         {

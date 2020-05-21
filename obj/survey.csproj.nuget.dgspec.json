@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/unarix/Documentos/code/survey/survey.csproj": {}
+    "/home/unarix/Documentos/code/usurvey/survey.csproj": {}
   },
   "projects": {
-    "/home/unarix/Documentos/code/survey/survey.csproj": {
+    "/home/unarix/Documentos/code/usurvey/survey.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/unarix/Documentos/code/survey/survey.csproj",
+        "projectUniqueName": "/home/unarix/Documentos/code/usurvey/survey.csproj",
         "projectName": "survey",
-        "projectPath": "/home/unarix/Documentos/code/survey/survey.csproj",
+        "projectPath": "/home/unarix/Documentos/code/usurvey/survey.csproj",
         "packagesPath": "/home/unarix/.nuget/packages/",
-        "outputPath": "/home/unarix/Documentos/code/survey/obj/",
+        "outputPath": "/home/unarix/Documentos/code/usurvey/obj/",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "/usr/share/dotnet/sdk/NuGetFallbackFolder"
