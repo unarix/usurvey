@@ -6,11 +6,12 @@
 
 
 <div class="py-5 text-center">
-    <img class="d-block mx-auto mb-4" src="https://upload.wikimedia.org/wikipedia/commons/7/7e/Argentina_Logo.png" alt="" width="100">
+    <img class="d-block mx-auto mb-4" src="images/covid.png" alt="" width="100">
     <h2>Comprobar DDJJ</h2>
 </div>
 
-@if (!@Model.dni.Equals(""))
+
+@if (@Model.temperatura == null)
 {
 
     <h4>Datos del empleado</h4>
@@ -61,13 +62,11 @@
 }
 else
 {
-    <h4>@Model.Message</h4>
-    <br>
-}
-
-@if (@Model.dni == null)
-{
-    <h3>Formulario guardado correctamente</h3>
+    <center>
+        <h4>@Model.Message</h4>
+        <br>
+        <button type="button" onclick="window.location='https://usurvey.azurewebsites.net/';" class="btn btn-success">Cerrar</button>
+    </center>
 }
 
 

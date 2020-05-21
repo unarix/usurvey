@@ -16,8 +16,6 @@ namespace survey.Pages
 
         public void OnGet()
         {
-            dni=""; // Set para que la vista lo interprete ok
-
             string id = Request.Query["id"];
             if(id!=null)
             {
@@ -52,15 +50,21 @@ namespace survey.Pages
                 test = sf.test;
                 test_desc = sf.test_desc;
                 fecha_test = sf.fecha_test;
+                temperatura = sf.temperatura;
+
+                Message = (temperatura!=null) ? "Esta DDJJ ya se encuentra completa. Usuario DNI: " + dni + " Nombre: " + nombre + " Temperatura: º" + temperatura : "" ;
 
             }
             else
+            {
+                temperatura = "";
                 Message = "No se encontro la declaracion para el usuario, o el codigo de seguridad es incorrecto.";
+            }
         }
 
         public void OnPost()
         {
-            dni=""; 
+            temperatura = ""; 
 
             string id = Request.Query["id"];
             temperatura = Request.Form[nameof(temperatura)];
