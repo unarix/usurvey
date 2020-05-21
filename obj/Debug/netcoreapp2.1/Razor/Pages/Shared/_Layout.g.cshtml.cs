@@ -58,7 +58,7 @@ using survey;
             WriteLiteral("<!DOCTYPE html>\r\n<html>\r\n");
             EndContext();
             BeginContext(25, 902, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "2c3d8e8222b34a949181f23a83800fb0", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "e1931b3d4862411fb5a4f12373bb309a", async() => {
                 BeginContext(31, 121, true);
                 WriteLiteral("\r\n    <meta charset=\"utf-8\" />\r\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\r\n    <title>");
                 EndContext();
@@ -73,7 +73,7 @@ using survey;
                 WriteLiteral("  </title>\r\n\r\n    ");
                 EndContext();
                 BeginContext(188, 156, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("environment", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "608ea39e541c454387d8693014ccc352", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("environment", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "54b9f0c32bd54a31891e76aa7eee6561", async() => {
                     BeginContext(223, 107, true);
                     WriteLiteral("\r\n        <link href=\"lib/bootstrap4/css/bootstrap.min.css\" rel=\"stylesheet\" crossorigin=\"anonymous\">\r\n    ");
                     EndContext();
@@ -95,7 +95,7 @@ using survey;
                 WriteLiteral("\r\n    ");
                 EndContext();
                 BeginContext(350, 156, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("environment", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "4bbf8779409e44d9b7b66af24a81889e", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("environment", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "76e4f19baeec459193886211b5af4c30", async() => {
                     BeginContext(385, 107, true);
                     WriteLiteral("\r\n        <link href=\"lib/bootstrap4/css/bootstrap.min.css\" rel=\"stylesheet\" crossorigin=\"anonymous\">\r\n    ");
                     EndContext();
@@ -150,7 +150,7 @@ using survey;
             WriteLiteral("\r\n");
             EndContext();
             BeginContext(929, 2517, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "beea5bf1ff554eb6af5f0122375cbf43", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "5b2c0947a1dc449c8de1fb13edf4cd51", async() => {
                 BeginContext(935, 693, true);
                 WriteLiteral(@"
     <header>
@@ -167,7 +167,7 @@ using survey;
                         ");
                 EndContext();
                 BeginContext(1628, 50, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "043ab77919f542fdbb9fa764ec3da460", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "1cf901fcdf7145ceb0e6e91e6d3d6542", async() => {
                     BeginContext(1666, 8, true);
                     WriteLiteral("Declarar");
                     EndContext();
@@ -190,7 +190,7 @@ using survey;
                 WriteLiteral("\r\n                    </li>\r\n                    <li class=\"nav-item\">\r\n                        ");
                 EndContext();
                 BeginContext(1774, 51, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "8be7d9ee880a4c73a6bcfb9b4b012102", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "578b5e1e22fc4dacafc2ceaaa6749da9", async() => {
                     BeginContext(1812, 9, true);
                     WriteLiteral("Comprobar");
                     EndContext();
@@ -227,7 +227,7 @@ using survey;
             ");
                 EndContext();
                 BeginContext(2150, 40, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("partial", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "0361c660b99549e68e3ee0b4aeaf6fde", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("partial", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "cca40e04f5a5479988a0ffa2b02336d9", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_TagHelpers_PartialTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.PartialTagHelper>();
@@ -256,7 +256,7 @@ using survey;
                 WriteLiteral("\r\n            <hr />\r\n            <footer>\r\n            </footer>\r\n        </div>\r\n    </main>\r\n    ");
                 EndContext();
                 BeginContext(2329, 526, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("environment", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "22b719c29f4842e38bddd7555738f4cb", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("environment", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "fc8d449e9b744cd3a308540220c0686c", async() => {
                     BeginContext(2364, 477, true);
                     WriteLiteral(@"
         <script src=""https://code.jquery.com/jquery-3.5.1.slim.min.js"" integrity=""sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"" crossorigin=""anonymous""></script>
@@ -283,7 +283,7 @@ using survey;
                 WriteLiteral("\r\n    ");
                 EndContext();
                 BeginContext(2861, 526, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("environment", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "da103a25f2f7493a8cd1301c58f4ddb2", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("environment", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "a9a1c9c96d8e4806ad97e1f4bde6f6ee", async() => {
                     BeginContext(2896, 477, true);
                     WriteLiteral(@"
         <script src=""https://code.jquery.com/jquery-3.5.1.slim.min.js"" integrity=""sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"" crossorigin=""anonymous""></script>
